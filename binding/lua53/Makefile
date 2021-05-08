@@ -2,8 +2,8 @@ CC = gcc
 CFLAGS = -O2 -fPIC -Wall
 LUADIR = ../../../../skynet/3rd/lua
 TARGET = ../../../../qcclib/protobuf.so
-#SHARED = -shared #for Linux
-SHARED= -bundle -undefined dynamic_lookup #for MacOS X
+SHARED = -shared #for Linux
+#SHARED= -bundle -undefined dynamic_lookup #for MacOS X
 
 .PHONY : all clean
 
